@@ -58,7 +58,7 @@ ulimit -n 999999
 echo -e "${O} [+] ${G} Cloning Raven-Storm ......."
 cd DOS
 sleep 2 
-https://github.com/Tmpertor/Raven-Storm
+git clone https://github.com/Tmpertor/Raven-Storm
 cd Raven-Storm
 chmod +x *
 ./install.sh
