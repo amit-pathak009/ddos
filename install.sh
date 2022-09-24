@@ -19,15 +19,12 @@ sudo apt update -y
 sudo apt upgrade -y
 sudo apt install npm -y
 sudo install nodejs -y
-sudo apt install git -y
 sleep 2
 echo -e "${O} [+] ${G} Installing Python ......."
 sudo apt install python -y
 sudo apt install python2 -y
 sudo apt install python3 -y
 sudo apt install pip -y
-sudo apt install pip2 -y
-sudo apt install pip3 -y
 
 sleep 2
 echo -e "${O} [+] ${G} Installing Go Language ......."
@@ -54,7 +51,7 @@ npm i cloudflare-bypasser
 echo -e "${O} [+] ${G} Installing Chrome ......."
 sleep 2
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-apt-get install ./google-chrome-stable_current_amd64.deb
+apt-get install ./google-chrome-stable_current_amd64.deb -y
 ulimit -n 999999
 
 
