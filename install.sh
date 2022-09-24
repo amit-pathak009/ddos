@@ -9,7 +9,6 @@ then
 echo -e "${R} [+] Please Run as Root"
 exit 1
 else
-do
 echo -e "${O} [+] ${G} Installing Required Packages ......."
 cd
 mkdir -p DOS
@@ -91,6 +90,4 @@ echo -e "${O} [+] ${G}  Installed all Required Tools ......"
 cd DOS
 echo -e "${O} [+] ${G}  Check the Installed tools Below ......"
 ls
-
-done
 fi
