@@ -60,8 +60,8 @@ cd DOS
 sleep 2 
 git clone https://github.com/Tmpertor/Raven-Storm
 cd Raven-Storm
-chmod +x *
-./install.sh
+sudo chmod +x *
+sudo ./install.sh
 pip3 install -r requirements.txt
 cd 
 
