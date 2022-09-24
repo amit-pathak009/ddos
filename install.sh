@@ -7,7 +7,7 @@ O='\033[0;33m'
 echo -e "${O} [+] ${G} Installing Required Packages ......."
 cd $HOME
 mkdir -p DOS
-apt -y install curl wget libcurl4 libssl-dev python3 python3-pip make cmake automake autoconf m4 build-essential ruby perl golang git
+sudo apt -y install curl wget libcurl4 libssl-dev python3 python3-pip make cmake automake autoconf m4 build-essential ruby perl golang git
 echo -e "${O} [+] ${G} Downloading system Updates ......."
 sleep 2
 sudo apt update -y
