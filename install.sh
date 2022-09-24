@@ -67,6 +67,13 @@ cd
 
 echo -e "${O} [+] ${G}  Raven-Storm is succesfully installed"
 
+echo -e "${O} [+] ${G}  Cloning MHDDoS ......"
+cd DOS
+sleep 2
+git clone https://github.com/MatrixTM/MHDDoS.git
+cd MHDDoS
+pip install -r requirements.txt
+
 echo -e "${O} [+] ${G}  Cloning ZxCDDoS ......"
 cd DOS
 sleep 2
@@ -76,13 +83,6 @@ pip3 install -r requirements.txt
 echo -e "${O} [+] ${G}  ZxCDDoS is succesfully installed"
 cd
 
-echo -e "${O} [+] ${G}  Cloning MHDDoS ......"
-cd DOS
-sleep 2
-git clone https://github.com/MatrixTM/MHDDoS.git
-cd MHDDoS
-pip install -r requirements.txt
-cd
 echo -e "${O} [+] ${G}  Installed all Required Tools ......"
 cd DOS
 echo -e "${O} [+] ${G}  Check the Installed tools Below ......"
