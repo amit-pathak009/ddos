@@ -10,7 +10,7 @@ echo -e "${R} [+] Please Run as Root"
 exit 1
 else
 echo -e "${O} [+] ${G} Installing Required Packages ......."
-cd
+cd $HOME
 mkdir -p DOS
 apt -y install curl wget libcurl4 libssl-dev python3 python3-pip make cmake automake autoconf m4 build-essential ruby perl golang git
 echo -e "${O} [+] ${G} Downloading system Updates ......."
@@ -56,6 +56,7 @@ ulimit -n 999999
 
 
 echo -e "${O} [+] ${G} Cloning Raven-Storm ......."
+cd $HOME
 cd DOS
 sleep 2 
 git clone https://github.com/Tmpertor/Raven-Storm
@@ -63,7 +64,7 @@ cd Raven-Storm
 sudo chmod +x *
 sudo ./install.sh
 pip3 install -r requirements.txt
-cd 
+cd $HOME 
 
 echo -e "${O} [+] ${G}  Raven-Storm is succesfully installed"
 
@@ -73,6 +74,7 @@ sleep 2
 git clone https://github.com/MatrixTM/MHDDoS.git
 cd MHDDoS
 pip install -r requirements.txt
+cd $HOME
 
 echo -e "${O} [+] ${G}  Cloning ZxCDDoS ......"
 cd DOS
@@ -81,7 +83,7 @@ git clone https://github.com/hoaan1995/ZxCDDoS
 cd ZxCDDoS
 pip3 install -r requirements.txt
 echo -e "${O} [+] ${G}  ZxCDDoS is succesfully installed"
-cd
+cd $HOME
 
 echo -e "${O} [+] ${G}  Installed all Required Tools ......"
 cd DOS
