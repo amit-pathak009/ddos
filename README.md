@@ -5,6 +5,8 @@ just copy paste the following commands
 
 git clone https://github.com/amit-pathak009/ddos
 
+cd ddos
+
 chmod +x *
 
 ./install.sh 
