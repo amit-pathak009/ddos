@@ -4,10 +4,15 @@ R='\033[0;31m'
 G='\033[0;32m'
 O='\033[0;33m'
 
+if [[ $EUID -ne 0 ]]
+then  
+echo -e "${R} [+] Please Run as Root"
+exit 1
+else
 echo -e "${O} [+] ${G} Installing Required Packages ......."
 cd $HOME
 mkdir -p DOS
-sudo apt -y install curl wget libcurl4 libssl-dev python3 python3-pip make cmake automake autoconf m4 build-essential ruby perl golang git
+apt -y install curl wget libcurl4 libssl-dev python3 python3-pip make cmake automake autoconf m4 build-essential ruby perl golang git
 echo -e "${O} [+] ${G} Downloading system Updates ......."
 sleep 2
 sudo apt update -y
@@ -49,6 +54,14 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 apt-get install ./google-chrome-stable_current_amd64.deb -y
 ulimit -n 999999
 
+echo -e "${O} [+] ${G} Installing Doser ......."
+cd $HOME
+cd DOS
+sleep 2 
+git clone https://github.com/Quitten/doser.py
+cd Quitten
+sudo chmod +x *
+cd $HOME 
 
 echo -e "${O} [+] ${G} Cloning Raven-Storm ......."
 cd $HOME
@@ -84,4 +97,4 @@ echo -e "${O} [+] ${G}  Installed all Required Tools ......"
 cd DOS
 echo -e "${O} [+] ${G}  Check the Installed tools Below ......"
 ls
-
+fi
