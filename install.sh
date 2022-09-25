@@ -4,11 +4,6 @@ R='\033[0;31m'
 G='\033[0;32m'
 O='\033[0;33m'
 
-if [[ $EUID -ne 0 ]]
-then  
-echo -e "${R} [+] Please Run as Root"
-exit 1
-else
 echo -e "${O} [+] ${G} Installing Required Packages ......."
 cd $HOME
 mkdir -p DOS
@@ -97,4 +92,4 @@ echo -e "${O} [+] ${G}  Installed all Required Tools ......"
 cd DOS
 echo -e "${O} [+] ${G}  Check the Installed tools Below ......"
 ls
-fi
+
